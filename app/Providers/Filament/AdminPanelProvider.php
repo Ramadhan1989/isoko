@@ -40,18 +40,18 @@ class AdminPanelProvider extends PanelProvider
                 'success' => Color::Emerald,
                 'warning' => Color::Orange,
             ])
-            // ->maxContentWidth('full')
-            // ->breadcrumbs(false) // disable breadcrumbs
+            ->maxContentWidth('full')
+            ->breadcrumbs(false) // disable breadcrumbs
             ->globalSearchKeyBindings(['command+k', 'ctrl+k'])
             ->sidebarCollapsibleOnDesktop() // collapse with icons
-            // ->sidebarFullyCollapsibleOnDesktop() // full collapse without icons
-            ->navigationItems([
-                NavigationItem::make('Source Code')
-                    ->url('https://github.com/webceyhan/filament-demo', shouldOpenInNewTab: true)
-                    ->icon('heroicon-o-globe-alt')
-                    ->group('External Links')
-                    ->sort(2)
-            ])
+            ->sidebarFullyCollapsibleOnDesktop() // full collapse without icons
+            // ->navigationItems([
+            //     NavigationItem::make('Source Code')
+            //         ->url('https://github.com/webceyhan/filament-demo', shouldOpenInNewTab: true)
+            //         ->icon('heroicon-o-globe-alt')
+            //         ->group('External Links')
+            //         ->sort(2)
+            // ])
             ->navigationGroups([ // order of groups
                 'Shop',
                 'Roles and Permissions',
